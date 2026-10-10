@@ -1,0 +1,10 @@
+export const queryKey = {
+  ARTIFACTS: "ARTIFACTS",
+  ARTIFACTS_INDEX: "ARTIFACTS_INDEX",
+  ARTIFACTS_INDEX_GET_ARTIFACTS: "ARTIFACTS_INDEX_GET_ARTIFACTS",
+
+  ARTIFACTS_ID: "ARTIFACTS_ID",
+  ARTIFACTS_ID_GET_ARTIFACT: "ARTIFACTS_ID_GET_ARTIFACT",
+} as const;
+
+export type QueryKey = (typeof queryKey)[keyof typeof queryKey];
